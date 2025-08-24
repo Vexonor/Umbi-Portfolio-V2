@@ -1,3 +1,5 @@
+"use client"
+
 import { ArrowRightIcon } from "@phosphor-icons/react"
 
 const ApproachSection = () => {
