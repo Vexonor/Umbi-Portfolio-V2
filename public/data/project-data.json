@@ -1,20 +1,38 @@
 [
   {
+    "id": 1,
+    "url": "",
+    "logo": "assets/umbi-logo.svg",
     "title": "Bisa Masak",
-    "img": "/project-img/ulearn-pattern.png",
-    "type": "Mobile App",
-    "topic": "Recipe application with gamification"
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolores voluptatem quas ut laborum amet, iusto excepturi corrupti sint exercitationem nesciunt iure quos cum eos maiores reprehenderit sequi, accusantium debitis?",
+    "type": "Mobile App Development",
+    "topic": "Recipe application with gamification",
+    "firstImg": "/project-img/ulearn-pattern.png",
+    "secondImg": "/project-img/ulearn.png",
+    "thirdImg": "/project-img/ulearn-phone.png"
   },
   {
+    "id": 2,
+    "url": "https://cata-log-mu.vercel.app/",
+    "logo": "assets/umbi-logo.svg",
     "title": "Cata-log",
-    "img": "/project-img/ulearn-pattern.png",
-    "type": "Mobile App",
-    "topic": "Recipe application with gamification"
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolores voluptatem quas ut laborum amet, iusto excepturi corrupti sint exercitationem nesciunt iure quos cum eos maiores reprehenderit sequi, accusantium debitis?",
+    "type": "Webite Development",
+    "topic": "Digital Catalog for restaurant",
+    "firstImg": "/project-img/cata-log.png",
+    "secondImg": "",
+    "thirdImg": ""
   },
   {
+    "id": 3,
+    "url": "https://teamanya.itch.io/escape-from-the-dream",
+    "logo": "assets/game-1-logo.svg",
     "title": "Escape from the Dream",
-    "img": "/project-img/ulearn-pattern.png",
-    "type": "Mobile App",
-    "topic": "Recipe application with gamification"
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolores voluptatem quas ut laborum amet, iusto excepturi corrupti sint exercitationem nesciunt iure quos cum eos maiores reprehenderit sequi, accusantium debitis?",
+    "type": "Game Development",
+    "topic": "GameSeed Participant 2025",
+    "firstImg": "/project-img/escape-dream.svg",
+    "secondImg": "",
+    "thirdImg": ""
   }
 ]

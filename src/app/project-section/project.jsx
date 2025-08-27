@@ -2,6 +2,7 @@
 
 import { ArrowUpRightIcon } from "@phosphor-icons/react";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 
@@ -25,21 +26,24 @@ const ProjectSection = () => {
       </div>
 
       <div className="flex flex-wrap md:gap-4 justify-center xl:justify-between my-20">
-        {projects.map((project, index) => (
-          <ProjectCard
-            key={index}
-            title={project.title}
-            img={project.img}
-            type={project.type}
-            topic={project.topic}
-          />
+        {projects.map((project) => (
+          <Link key={project.id} href={project.url ? project.url : `/project-section/${project.id}`} className="shrink-0">
+            <ProjectCard
+              key={project.id}
+              logo={project.logo}
+              title={project.title}
+              img={project.firstImg}
+              type={project.type}
+              topic={project.topic}
+            />
+          </Link>
         ))}
       </div>
     </div>
   )
 }
 
-const ProjectCard = ({ title, img, type, topic }) => {
+const ProjectCard = ({ logo, title, img, type, topic }) => {
   return (
     <div className="relative w-[25rem] h-[32.8rem] flex flex-col justify-between items-end group cursor-pointer scale-90 md:scale-100">
       <div className=" size-[6rem] md:size-[7rem] relative border-8 border-beluga rounded-bl-[65%]">
@@ -51,14 +55,14 @@ const ProjectCard = ({ title, img, type, topic }) => {
           before:content-[''] before:absolute before:w-40 before:h-44 before:bg-transparent before:-top-16 before:-right-[9.91rem] before:rounded-[90%] before:shadow-[-105px_140px_0_40px_rgba(29,29,29,1)]
           ">
         <div className="size-full flex items-center gap-4 px-10 text-white text-base font-semibold">
-          <Image width={28} height={28} className="size-7 rounded-full object-cover border border-white" src="assets/umbi-logo.svg" alt="Umbi Logo" />
+          <Image width={28} height={28} className="size-7 rounded-full object-cover border border-white" src={logo} alt="Umbi Logo" />
           <h2 className="z-10">{title}</h2>
         </div>
       </div>
       <div className="w-full h-[26rem] rounded-b-xl rounded-tr-4xl bg-charcoal">
         <div className="size-full p-8 flex flex-col gap-8 text-white">
           {/* Image */}
-          <Image width={400} height={224} className="w-full h-[14rem] bg-neutral-400 z-10 rounded-[1.3rem] object-cover" src={img} alt={title} />
+          <Image width={400} height={224} className="w-full min-h-[14rem] bg-neutral-400 z-10 rounded-[1.3rem] object-cover" src={img} alt={title} />
 
           {/* Body */}
           <div className="flex flex-col gap-2">
