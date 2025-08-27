@@ -16,33 +16,31 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 export default function Home() {
 
   return (
-    <>
-      <div className="relative bg-beluga">
-        <div className="w-full md:max-w-[90rem] h-dvh">
-          <HeroSection />
-        </div>
-        <div className="w-screen h-[32rem] bg-charcoal">
-          <MeetUsSection />
-        </div>
-        <div className="w-screen h-max mx-auto">
-          <ApproachSection />
-        </div>
-        <div className="w-full md:max-w-[90rem] h-dvh my-16">
-          <AbilitySection />
-        </div>
-        <div className="w-full md:max-w-[90rem] dvh mx-auto">
-          <ProjectSection />
-        </div>
-        <div className="w-full md:max-w-[90rem] h-max mx-auto">
-          <WhyUsSection />
-        </div>
-        {/* <div className="max-w-[90rem] dvh">
+    <div className="relative bg-beluga w-full">
+      <div className="w-full md:max-w-[90rem] h-dvh">
+        <HeroSection />
+      </div>
+      <div className="w-full h-[32rem] bg-charcoal">
+        <MeetUsSection />
+      </div>
+      <div className="w-full h-max mx-auto">
+        <ApproachSection />
+      </div>
+      <div className="w-full md:max-w-[90rem] h-dvh my-16">
+        <AbilitySection />
+      </div>
+      <div className="w-full md:max-w-[90rem] dvh mx-auto">
+        <ProjectSection />
+      </div>
+      <div className="w-full md:max-w-[90rem] h-max mx-auto">
+        <WhyUsSection />
+      </div>
+      {/* <div className="max-w-[90rem] dvh">
           <TestimonialsSection />
         </div> */}
-        <div className="w-screen dvh">
-          <Footer />
-        </div>
+      <div className="w-full dvh">
+        <Footer />
       </div>
-    </>
+    </div>
   );
 }

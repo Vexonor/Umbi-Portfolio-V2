@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import BlurText from './blur-text'
 import ContainerLoading from './container-load'
-import DotEffect from './dot-effect'
 import SplitText from './split-text'
 
 const HeroSection = () => {
@@ -12,7 +11,7 @@ const HeroSection = () => {
   return (
     <>
       {showLoading && <ContainerLoading onFinish={() => setShowLoading(false)} />}
-      <div className='w-screen h-screen relative flex justify-center items-center'>
+      <div className='w-dvw h-dvh relative flex justify-center items-center'>
         <div className="size-full flex flex-col justify-center items-center gap-2">
           <BlurText
             text="UmbiDev"
@@ -33,8 +32,8 @@ const HeroSection = () => {
           />
         </div>
 
-        <DotEffect duration={800} />
-        <DotEffect duration={1600} />
+        {/* <DotEffect duration={800} />
+        <DotEffect duration={1600} /> */}
 
       </div>
 
