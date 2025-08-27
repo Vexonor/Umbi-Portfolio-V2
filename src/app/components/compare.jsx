@@ -3,7 +3,7 @@ import { Compare } from "@/components/ui/compare";
 export function Compares() {
   return (
     <div
-      className="rounded-xl w-[25rem] md:w-[35rem] lg:w-[50rem]">
+      className="rounded-xl w-[20rem] md:w-[35rem] lg:w-[50rem]">
       <Compare
         firstImage="/image/Lofi.jpg"
         secondImage="/image/Hifi.jpg"
