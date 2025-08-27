@@ -42,12 +42,12 @@ const ProjectSection = () => {
 const ProjectCard = ({ title, img, type, topic }) => {
   return (
     <div className="relative w-[25rem] h-[32.8rem] flex flex-col justify-between items-end group cursor-pointer scale-90 md:scale-100">
-      <div className="size-[7rem] relative border-8 border-beluga rounded-bl-[65%]">
-        <div className="size-full rounded-full bg-charcoal flex justify-center items-center absolute -top-2 -right-2">
+      <div className=" size-[6rem] md:size-[7rem] relative border-8 border-beluga rounded-bl-[65%]">
+        <div className="size-full rounded-full bg-charcoal flex justify-center items-center absolute -top-2 right-2 md:-right-2">
           <ArrowUpRightIcon className="size-10 text-white group-hover:rotate-45 transition-all duration-600" />
         </div>
       </div>
-      <div className="w-[16rem] sm:w-[17rem] md:w-[18rem] h-[8rem] absolute top-0 left-0 bg-charcoal rounded-tl-xl rounded-tr-4xl
+      <div className="w-[15rem] sm:w-[17rem] md:w-[18rem] h-[8rem] absolute top-0 left-0 bg-charcoal rounded-tl-xl rounded-tr-4xl
           before:content-[''] before:absolute before:w-40 before:h-44 before:bg-transparent before:-top-16 before:-right-[9.91rem] before:rounded-[90%] before:shadow-[-105px_140px_0_40px_rgba(29,29,29,1)]
           ">
         <div className="size-full flex items-center gap-4 px-10 text-white text-base font-semibold">
