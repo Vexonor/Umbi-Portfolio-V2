@@ -21,5 +21,8 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-urbanist), sans-serif;
-  
+}
+
+.card {
+  clip-path: path("M 380,100 L 360,100 A 60,60 0,0,1 300,40 L 300,20 A 20,20 0,0,0 280,0 L 20,0 A 20,20 0,0,0 0,20 L 0,460 A 20,20 0,0,0 20,480 L 380,480 A 20,20 0,0,0 400,460 L 400,120 A 20,20 0,0,0 380,100 Z");
 }

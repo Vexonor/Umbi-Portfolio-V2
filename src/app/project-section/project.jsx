@@ -38,40 +38,46 @@ const ProjectSection = () => {
             />
           </Link>
         ))}
+
       </div>
-    </div>
+    </div >
   )
 }
 
 const ProjectCard = ({ logo, title, img, type, topic }) => {
   return (
-    <div className="relative w-[25rem] h-[32.8rem] flex flex-col justify-between items-end group cursor-pointer scale-90 md:scale-100">
-      <div className=" size-[6rem] md:size-[7rem] relative border-8 border-beluga rounded-bl-[65%]">
-        <div className="size-full rounded-full bg-charcoal flex justify-center items-center absolute -top-2 right-2 md:-right-2">
-          <ArrowUpRightIcon className="size-10 text-white group-hover:rotate-45 transition-all duration-600" />
-        </div>
-      </div>
-      <div className="w-[15rem] sm:w-[17rem] md:w-[18rem] h-[8rem] absolute top-0 left-0 bg-charcoal rounded-tl-xl rounded-tr-4xl
-          before:content-[''] before:absolute before:w-40 before:h-44 before:bg-transparent before:-top-16 before:-right-[9.91rem] before:rounded-[90%] before:shadow-[-105px_140px_0_40px_rgba(29,29,29,1)]
-          ">
-        <div className="size-full flex items-center gap-4 px-10 text-white text-base font-semibold">
-          <Image width={28} height={28} className="size-7 rounded-full object-cover border border-white" src={logo} alt="Umbi Logo" />
-          <h2 className="z-10">{title}</h2>
-        </div>
-      </div>
-      <div className="w-full h-[26rem] rounded-b-xl rounded-tr-4xl bg-charcoal">
-        <div className="size-full p-8 flex flex-col gap-8 text-white">
-          {/* Image */}
-          <Image width={400} height={224} className="w-full min-h-[14rem] bg-neutral-400 z-10 rounded-[1.3rem] object-cover" src={img} alt={title} />
+    <div className="w-[25rem] h-[30rem] relative group cursor-pointer scale-90 md:scale-100">
+      <div className="size-full bg-charcoal flex flex-col justify-between card">
+        <div className="">
+          {/* App Brand */}
+          <div className="w-full h-20 flex items-end px-10 text-white text-base font-semibold">
+            <div className="flex items-center gap-4">
+              <Image width={28} height={28} className="size-10 rounded-full object-cover border border-white" src={logo} alt="Umbi Logo" />
+              <h2 className="z-10">{title}</h2>
+            </div>
+          </div>
+          {/* Card Body */}
+          <div className="w-full h-[26rem] px-8 py-10">
+            <div className="size-full flex flex-col gap-4 text-white">
+              {/* Image */}
+              <Image width={400} height={224} className="w-full min-h-[14rem] bg-neutral-400 z-10 rounded-[1.3rem] object-cover" src={img} alt={title} />
 
-          {/* Body */}
-          <div className="flex flex-col gap-2">
-            <span className="text-sm font-medium bg-mine-shaft px-3 py-1 rounded-full w-max">{type}</span>
-            <h1 className="text-xl sm:text-3xl font-bold">{topic}</h1>
+              {/* Body */}
+              <div className="flex flex-col gap-2">
+                <span className="text-sm font-medium bg-mine-shaft px-3 py-1 rounded-full w-max">{type}</span>
+                <h1 className="text-xl sm:text-2xl font-bold h-40">{topic}</h1>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      {/* Button */}
+      <div className="size-20 absolute top-0 right-0">
+        <div className="size-full rounded-full bg-charcoal flex justify-center items-center">
+          <ArrowUpRightIcon className="size-10 text-white group-hover:rotate-45 transition-all duration-600" />
+        </div>
+      </div>
+    </div >
   )
 }
 
