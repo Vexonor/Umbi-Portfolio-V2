@@ -2,14 +2,14 @@
   {
     "id": 1,
     "url": "",
-    "logo": "assets/umbi-logo.svg",
+    "logo": "assets/bisamasak-logo.svg",
     "title": "Bisa Masak",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolores voluptatem quas ut laborum amet, iusto excepturi corrupti sint exercitationem nesciunt iure quos cum eos maiores reprehenderit sequi, accusantium debitis?",
+    "description": "BisaMasak application is a gamification-based cooking recipe application designed to provide a more interactive and engaging cooking experience for users. The app provides recipes that can be customized to the user's skill level, as well as an ingredient search feature that helps find recipes based on ingredients available at home.",
     "type": "Mobile App Development",
     "topic": "Recipe application with gamification",
-    "firstImg": "/project-img/ulearn-pattern.png",
-    "secondImg": "/project-img/ulearn.png",
-    "thirdImg": "/project-img/ulearn-phone.png"
+    "firstImg": "/project-img/bisamasak-pattern.svg",
+    "secondImg": "/project-img/bisamasak-1.svg",
+    "thirdImg": "/project-img/bisamasak-2.svg"
   },
   {
     "id": 2,
