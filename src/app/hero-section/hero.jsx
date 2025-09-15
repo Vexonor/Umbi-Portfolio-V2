@@ -1,16 +1,12 @@
 "use client"
 
-import { useState } from 'react'
 import BlurText from './blur-text'
-import ContainerLoading from './container-load'
 import SplitText from './split-text'
 
 const HeroSection = () => {
-  const [showLoading, setShowLoading] = useState(true)
 
   return (
     <>
-      {showLoading && <ContainerLoading onFinish={() => setShowLoading(false)} />}
       <div className='w-dvw h-dvh relative flex justify-center items-center'>
         <div className="size-full flex flex-col justify-center items-center gap-2">
           <BlurText
@@ -36,7 +32,6 @@ const HeroSection = () => {
         <DotEffect duration={1600} /> */}
 
       </div>
-
     </>
   )
 }
