@@ -27,10 +27,19 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Umbi Dev",
+    "url": "https://umbiteams.com/"
+  };
   return (
     <html lang="en">
       <head>
-        
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </head>
       <body
         className={`${urbanist.variable} antialiased bg-beluga overflow-x-hidden`}
